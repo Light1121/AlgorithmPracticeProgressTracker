@@ -1,0 +1,22 @@
+# LeetCode 
+
+- 18/02/2025 - 1. Two Sum - Easy  
+- 18/02/2025 - 9. Palindrome Number - Easy  
+- 20/02/2025 - 2. Add Two Numbers (Linked List) - Medium  
+- 20/02/2025 - 13. Roman to Integer - Easy  
+- 21/02/2025 - 14. Longest Common Prefix - Easy  
+- 22/02/2025 - 20. Valid Parentheses - Easy  
+- 24/02/2025 - 26. Remove Duplicates from Sorted Array - Easy  
+- 25/02/2025 - 27. Remove Element - Easy  
+- 26/02/2025 - 28. Find First Occurrence in String - Easy  
+- 26/02/2025 - 35. Search Insert Position - Easy  
+- 27/02/2025 - 88. Merge Sorted Array - Easy  
+- 01/03/2025 - 80. Remove Duplicates from Sorted Array II - Medium  
+- 01/03/2025 - 169. Majority Element - Easy  
+- 02/03/2025 - 189. Rotate Array - Medium  
+- 03/03/2025 - 121. Best Time to Buy and Sell Stock - Easy  
+- 03/03/2025 - 122. Best Time to Buy and Sell Stock II - Medium  
+- 04/03/2025 - 55. Jump Game - Medium
+- Sick
+- (will make a thought.txt of each question, in order to practice explaination skills)
+- 10/03/2025 - 274. H-Index - Medium
