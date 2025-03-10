@@ -33,3 +33,4 @@ class Solution(object):
                 nums[index] = i
                 index += 1
         return index
+
