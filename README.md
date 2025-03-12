@@ -20,3 +20,4 @@
 - Sick
 - (will make a thought.txt of each question, in order to practice explaination skills)
 - 10/03/2025 - 274. H-Index - Medium
+- 11/03/2025 - 380. Insert Delete GetRandom O(1) - Medium
