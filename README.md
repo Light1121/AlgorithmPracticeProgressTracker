@@ -22,4 +22,4 @@
 - 10/03/2025 - 274. H-Index - Medium
 - 11/03/2025 - 380. Insert Delete GetRandom O(1) - Medium
 - 12/03/2025 - 134. Gas Station - Medium
-- 13/03/2025 - 135. Candy - Hard
+- 13/03/2025 - 135. Candy - Hard (not done finished optimal solution)
