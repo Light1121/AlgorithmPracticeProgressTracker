@@ -1,0 +1,52 @@
+**first try**
+there was a question doing the revert, turning roman to integer. now it is interget to roman
+last time is to read each char in the string, and increament the interger untill it meets the roman
+
+now do the opposite
+from the largest value, now its 1000,  do  target_num - 1000
+if it is larger than 1000, it will keep on subtracting untill it is not
+then we just add respective number of "M"
+if it become negative, that mean it has to be between range of 0-999
+so try to use D to build the number. untill it become exactly = 0
+
+using the pop from last index is the fastest removing from array, no shifting
+
+        roman = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"]
+        value = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
+        answer = ""
+        while True:
+            if num - value[-1] == 0:
+                answer += roman[-1]
+                return answer
+            elif num - value[-1] < 0:
+                value.pop()
+                roman.pop()
+            else:
+                answer += roman[-1]
+                num -= value[-1]
+
+cannot use map since it cannot be iterated, use 2 array is better
+also, useing answer = "" can result n^2 because each time it will make new string
+using array is faster since most of the time is o1 and only o(n) when resize
+
+Optimize version
+use tapules inside array so it can be iterated while having  both value and Roman
+same method but just using for loop.
+
+        pairs = [
+            (1000, "M"), (900, "CM"), (500, "D"), (400, "CD"),
+            (100, "C"), (90, "XC"), (50, "L"), (40, "XL"),
+            (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")
+        ]
+        
+        answer = []
+        for value, symbol in pairs:
+            while num >= value:
+                answer.append(symbol)
+                num -= value
+            if num == 0:
+                break
+        
+        return "".join(answer)
+								
+				
