@@ -1,0 +1,23 @@
+this class is already a randomized set so, in init make a empty set by self.set= set()
+
+for insert just if val in set, then do nothing return false
+**(why not using IF val NOT in set)
+because it the not will have to loop through the entier set to know if is NOT**
+same for the remove, once its found it will go through the remove.
+
+for get random just return random.choice(list(self.set))
+
+
+***** aruhh seems like this is not the optimal using set
+use map instead********
+
+using array might be the best case to operate thing in O(1)
+first init with a empty map and array
+the map has {value : position_index_in_array}
+
+then the rest is the same but remove is diff,
+first find the index of val,
+overwrite that val using the last element,
+pop out the last element  only take o(1)
+use del function to delete the one in map
+
