@@ -27,3 +27,4 @@
 - 15/03/2025 - 16/03/2025 UniHack
 - 17/03/2025 - 58. Length of Last Word - Easy
 - 17/03/2025 - 151. Reverse Words in a String - Medium
+- 18/03/2025 - 6. Zigzag Conversion - Medium
