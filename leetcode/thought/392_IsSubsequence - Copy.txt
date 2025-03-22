@@ -1,0 +1,39 @@
+first need to convert the word into normal string instead of sentence
+use the function isalnum, 
+then since already have the entier word then just compare,
+using word[::1] to invert the word if it is still the same then true
+        combined_word = []
+        for char in s:
+            if char.isalnum():
+                combined_word.append(char.lower())
+        return True if combined_word == combined_word[::-1] else False
+
+optimize with using 2 point, direct compare left right so only n/2 needed
+        combined_word = []
+        for char in s:
+            if char.isalnum():
+                combined_word.append(char.lower())
+        
+        right_char = len(combined_word) -1
+        for left_char in range(len(combined_word)//2):
+            if combined_word[left_char] != combined_word[right_char]:
+                return False
+            right_char -= 1
+        return True
+
+using string instead of array to store combined word
+        s = ''.join(c.lower() for c in s if c.isalnum())
+        left = 0 
+        right = len(s) - 1
+
+        while left < right:
+            if s[left] != s[right]:
+                return False
+            left += 1
+            right -= 1
+
+        return True
+
+######如果是要append的话array比较好用，append在string更慢
+#######但是这个一开始就能把string定义好就直接用string
+				

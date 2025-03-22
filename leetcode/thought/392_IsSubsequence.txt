@@ -1,0 +1,17 @@
+pretty ez, just loop t only once
+meanwhile, search for each digit in s
+if some index is not yet found, remain the same index untill found
+since only looping the t
+if reached the end then meaning not found return false
+code:
+        if len(s) == 0:
+            return True
+        
+        current_index = 0
+        for char in t:
+            if char == s[current_index]:
+                current_index += 1
+            if current_index == len(s):
+                return True
+   
+        return False
