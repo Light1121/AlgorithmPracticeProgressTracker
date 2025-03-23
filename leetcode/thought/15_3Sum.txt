@@ -1,0 +1,40 @@
+this is done by first sorting the array
+first make a for loop to hold a number (fix)
+it will start from the first 
+
+then we have 2 more number to find
+just like 2 sum II, use low and high pointer
+since this is sorted, 
+if addes up larger than 0, just move one lower
+if addes up smaller than 0, move one higher
+
+make sure no duplicaed
+
+untill the fix number is loop all array then done 
+
+        nums.sort()
+        ans = []
+
+        for fix_num in range(len(nums) -2): # at least 3 number
+            if fix_num > 0 and nums[fix_num] == nums[fix_num-1]: # avoid duplicated
+                continue
+            #init the low high value
+            low = fix_num + 1
+            high = len(nums) - 1
+
+            # inner loop for getting right combination
+            while low < high: 
+                total = nums[fix_num] + nums[low] + nums[high]
+
+                if total == 0:
+                    ans.append([nums[fix_num], nums[low], nums[high]])
+                    low += 1
+                    while nums[low] == nums[low-1] and low < high:
+                        low += 1 
+                elif total < 0:
+                    low += 1
+                else:
+                    high -= 1
+        
+        return ans
+
