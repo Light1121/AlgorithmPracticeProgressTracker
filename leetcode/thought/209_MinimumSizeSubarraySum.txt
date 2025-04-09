@@ -1,0 +1,21 @@
+DID IT WRONG BECASUE YOU READ THE QUESTION WRONG!!
+
+IS SUBSTRING, meaning have to be continuse 
+for example: Target =100, {2,1,1,1,1,1,1,98}, the shorstest is 2. but not valid since it skips
+
+so only way to solve is sliding windows, so cannot sort as well.
+        min_len = float("inf")
+        left = 0
+        cur_sum = 0
+
+        for right in range(len(nums)):
+            cur_sum += nums[right]
+
+            while cur_sum >= target:
+                if right - left + 1 < min_len:
+                    min_len = right - left + 1
+                cur_sum -= nums[left]
+                left += 1
+        
+        return min_len if min_len != float("inf") else 0
+
