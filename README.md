@@ -36,3 +36,4 @@
 - sick & assignment & work (skip 2 weeks)
 - 09/04/2025 - 209. Minimum Size Subarray Sum - Medium
 - 10/04/2025 - 3. Longest Substring Without Repeating Characters - Medium
+- 11/04/2025 - 36. Valid Sudoku - Medium
