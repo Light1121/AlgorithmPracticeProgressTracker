@@ -1,0 +1,10 @@
+This question is not that hard.
+just find out that spiral is meaning 4 different direction
+
+left to right (at top)
+top to bottom (on right)
+right to left (at bottom)
+bottom to top (on left)
+
+each time you loop the entire array but after each loop
+constrain the boundary of each direction --> until it meet
