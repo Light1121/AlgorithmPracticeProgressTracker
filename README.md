@@ -37,4 +37,5 @@
 - 09/04/2025 - 209. Minimum Size Subarray Sum - Medium
 - 10/04/2025 - 3. Longest Substring Without Repeating Characters - Medium
 - 11/04/2025 - 36. Valid Sudoku - Medium 
-- 12/04/2025 - 54. Spiral Matrix - Medium 
+- 12/04/2025 - 54. Spiral Matrix - Medium
+- 13/04/2025 - 48. Rotate Image - Medium

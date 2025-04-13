@@ -1,0 +1,37 @@
+to rotate meaning you have to flip up side down
+1
+2 
+3
+becomes 
+3
+2
+1
+then you do diagonal reverse --> 0,1 = 1,0 or 2,1 = 1,2
+then you get rotate 
+
+        top = 0
+        bottom = len(matrix) -1
+
+        while top < bottom:
+            temp = matrix[bottom]
+            matrix[bottom] = matrix[top]
+            matrix[top] = temp
+            top += 1
+            bottom -= 1
+
+        for row in range(len(matrix)):
+            column = row+1
+            while column < len(matrix):
+                temp = matrix[column][row] 
+                matrix[column][row] = matrix[row][column]
+                matrix[row][column] = temp
+                column += 1
+        return matrix
+
+but can be faster if done in build-in function, also do the diagonal first then flip LEFT side RIGHT
+        n = len(matrix)
+        for i in range(n):
+            for j in range(i+1, n):
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+        for row in matrix:
+            row.reverse()
