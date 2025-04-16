@@ -1,0 +1,29 @@
+class Solution(object):
+    def wordPattern(self, pattern, s):
+        """
+        :type pattern: str
+        :type s: str
+        :rtype: bool
+        """
+        # make the sentence into array
+        array_s = s.split()
+        # if pattern length is not the same with num of string
+        if len(array_s) != len(pattern):
+            return False
+
+        map_pattern_to_s = {}  # pattern → s
+        map_s_to_pattern = {}  # s → pattern
+
+        for i, pattern_letter in enumerate(pattern):
+            s_string = array_s[i]
+
+            if pattern_letter in map_pattern_to_s and map_pattern_to_s[pattern_letter] != s_string:
+                return False
+
+            if s_string in map_s_to_pattern and map_s_to_pattern[s_string] != pattern_letter:
+                return False
+
+            map_pattern_to_s[pattern_letter] = s_string       
+            map_s_to_pattern[s_string] = pattern_letter
+
+        return True

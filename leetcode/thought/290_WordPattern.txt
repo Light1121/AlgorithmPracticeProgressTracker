@@ -1,0 +1,13 @@
+split the sentence into array
+now
+use a map to pair the letter
+as stated in example
+Mapping 'e' to 'a'.
+Mapping 'g' to 'd'.
+but have to make 2 map make sure it is unique
+example --> s = "ab", t = "aa"
+
+just check if exsit or not if not then insert
+if exsist then check if matching
+FOR BOTH MAP
+untill loop all element done

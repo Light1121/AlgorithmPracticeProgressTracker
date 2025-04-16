@@ -39,3 +39,6 @@
 - 11/04/2025 - 36. Valid Sudoku - Medium 
 - 12/04/2025 - 54. Spiral Matrix - Medium
 - 13/04/2025 - 48. Rotate Image - Medium
+- 14/04/2025 - 383. Ransom Note - Easy
+- 15/04/2025 - 205. Isomorphic Strings - Easy
+- 16/04/2025 - 290. Word Pattern - Easy

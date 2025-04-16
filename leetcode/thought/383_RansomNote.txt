@@ -1,0 +1,12 @@
+use Magazine(M) to build RansomNote (R)
+each letter in M can only use once.
+
+make a map, loop the (M) store number of time letter exsist 
+key : value --> letter: number of time occure
+
+then loop (R) if letter not found in map meaning false
+if exsist then subtract on continue
+when there is number hits 0 meaning not enough letter to build R
+return false
+
+if all loop successfully --> True
