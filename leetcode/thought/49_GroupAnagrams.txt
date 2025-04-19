@@ -1,0 +1,10 @@
+first sort the word, 
+since anagram is form by same char with different order
+
+so if they are anagram they will have the same string after sort
+
+use a map to store these sorted anagram to map
+the sorted anagram is the key
+the original string is the value [array of string]
+
+then convert the value into list

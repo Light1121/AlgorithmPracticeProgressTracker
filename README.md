@@ -42,3 +42,5 @@
 - 14/04/2025 - 383. Ransom Note - Easy
 - 15/04/2025 - 205. Isomorphic Strings - Easy
 - 16/04/2025 - 290. Word Pattern - Easy
+- 17/04/2025 - 242. Valid Anagram - Easy
+- 18/04/2025 - 49. Group Anagrams - Medium

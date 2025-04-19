@@ -1,0 +1,10 @@
+ez question
+if ana gram then meaning same number of letter
+
+so length have to be the same
+count number of each letter
+store it into map where letter:count
+
+then subtract the number to construct the other string
+
+if finish looping meaning success
