@@ -1,0 +1,12 @@
+0,1,2,4,5,7 -> "0->2","4->5","7"
+group continues set together
+if alone just keep one with arrow
+
+basicly sliding window --> high and low
+keep moving high until meet the heigh + 1 not continues
+then range between high and low as set --> append to array
+
+then make the new starting by move low to high + 1 (just high no plus 1)
+
+#make-sure
+make high one digit more --> check backwards --> high == high - 1

@@ -1,0 +1,8 @@
+202_Happy Number.txt
+happy number is number take each digit and square then add then up
+if it end up a loop then FALSE, if it ends with 1 then TRUE
+
+for each digit do --> (n%10)* *2
+move to next digit --> n=n//10
+then add them up to total
+put into set --> check if exsit --> if yes return false				

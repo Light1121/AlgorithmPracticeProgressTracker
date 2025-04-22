@@ -44,3 +44,7 @@
 - 16/04/2025 - 290. Word Pattern - Easy
 - 17/04/2025 - 242. Valid Anagram - Easy
 - 18/04/2025 - 49. Group Anagrams - Medium
+- 19/04/2025 - 202. Happy Number - Easy
+- 20/04/2025 - 219. Contains Duplicate II - Easy
+- 21/04/2025 - 128. Longest Consecutive Sequence - Medium
+- 22/04/2025 - 228. Summary Ranges - Easy

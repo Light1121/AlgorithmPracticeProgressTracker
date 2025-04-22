@@ -1,0 +1,7 @@
+basicly sort within O(n)
+use set --> no duplicated
+conver entire array to set
+loop each number in set
+inside loop --> check current + 1 exsist or not
+since its hash table (set) , only O(1) to check (since specify the value)
+keep track of largest  count

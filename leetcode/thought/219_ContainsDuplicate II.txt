@@ -1,0 +1,11 @@
+use sliding windows, but can be simplify to only one pointer, 
+use k to calcualte the other pointer --> window size
+
+#check exsit
+use map to store num:digit --> use digit calculate window size
+
+#looping
+keep moving i to next one --> check if num【i ] in the set
+#check size
+calculate window size by current ( digit -  digit last time seen) <= k
+if not seen just make the value = digit
