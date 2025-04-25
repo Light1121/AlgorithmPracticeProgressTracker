@@ -1,0 +1,41 @@
+        # find new start
+        # check each END in interval
+        # compare with start in newinterval
+        # if END larger >= newinterval start
+        # --> newinterval start = min(newinterval start, START)
+        # finished finding start
+
+        # after find start --> find new end
+        # check each START in interval
+        # compare with end in newinterval
+        # if START <= newinterval end
+        # --> newinterval start = min(newinterval start, START)
+        # finished finding end
+
+        #loop to see if any other need to append
+				        s, e = newInterval
+        n = len(intervals)
+
+        left = 0
+        while left < n and intervals[left][1] < s:
+            left += 1
+        if left < n:
+            s = min(s, intervals[left][0])
+
+        right = left
+        while right < n and intervals[right][0] <= e:
+            e = max(e, intervals[right][1])
+            right += 1
+        
+        return intervals[:left] + [[s, e]] + intervals[right:]
+
+
+But there is faster way is to just append new then sort then merge
+for start, end in intervals[1:]:
+            if prev_end >= start:
+                prev_end = max(prev_end, end)
+            else:
+                merged.append([prev_start, prev_end])
+                prev_start, prev_end = start, end
+
+        merged.append([prev_start, prev_end])

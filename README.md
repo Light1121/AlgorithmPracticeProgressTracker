@@ -48,3 +48,6 @@
 - 20/04/2025 - 219. Contains Duplicate II - Easy
 - 21/04/2025 - 128. Longest Consecutive Sequence - Medium
 - 22/04/2025 - 228. Summary Ranges - Easy
+- 23/04/2025 - 56. Merge Intervals - Medium
+- 24/04/2025 - 57. Insert Interval - Medium
+- 25/04/2025 - 452. Minimum Number of Arrows to Burst Balloons - Medium

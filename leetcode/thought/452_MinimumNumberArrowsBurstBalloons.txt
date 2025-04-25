@@ -1,0 +1,8 @@
+compare the previous END with the NEXT_START
+if pre_END  >= NEXT_START
+see MIN (pre_END, NEXT_END)
+
+min becasue --> 2 balloons --> {  { hit here can be both }  }
+
+use for loop so keep updating untill not within inteval
+append new interval make the new on = previous

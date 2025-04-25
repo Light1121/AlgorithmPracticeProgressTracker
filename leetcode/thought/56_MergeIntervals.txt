@@ -1,0 +1,6 @@
+compare the previous END with the NEXT_START
+if pre_END  >= NEXT_START
+see MAX (pre_END, NEXT_END)
+
+use for loop so keep updating untill not within inteval
+append new interval make the new on = previous
