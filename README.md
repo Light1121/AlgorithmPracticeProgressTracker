@@ -51,3 +51,4 @@
 - 23/04/2025 - 56. Merge Intervals - Medium
 - 24/04/2025 - 57. Insert Interval - Medium
 - 25/04/2025 - 452. Minimum Number of Arrows to Burst Balloons - Medium
+- 26/04/2025 - 71. Simplify Path - Medium

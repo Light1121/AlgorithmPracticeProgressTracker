@@ -1,0 +1,39 @@
+make a map where key and value are the { }
+closing have to be the key
+
+make a stack by just array but use pop
+
+since using closing as the key --> if not in the key then its open
+then append into stack
+
+when meeting closing check if last one matching --> if not just return false
+if match then pop
+        if len(s) % 2 != 0:
+            return False
+
+        parentheses_pair = {
+            ')' : '(',
+            '}' : '{',
+            ']' : '[',
+        }
+        stack = []
+
+        for parentheses in s:
+            if parentheses in parentheses_pair:
+                if not stack or stack[-1] != parentheses_pair[parentheses]:
+                    return False
+                else:
+                    stack.pop()
+            else:
+                stack.append(parentheses)
+        
+        return len(stack) == 0
+				
+better to just use if string in ' ( {':
+its faster check
+            if string in '({[':
+                stack.append(string)
+            else:
+                if not stack or stack[-1] != pairs[string]:
+                    return False
+                stack.pop()

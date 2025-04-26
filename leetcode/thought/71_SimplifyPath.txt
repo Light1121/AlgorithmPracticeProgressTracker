@@ -1,0 +1,9 @@
+first break the string into array using split
+
+things are already done here loop the array
+
+append everything into stack
+whenever see ".." use pop
+whenever see "." skip
+
+just append everything then join then back together using "/".join

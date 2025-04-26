@@ -4,19 +4,19 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        valid_set = {
-            '(': ')',
-            '{': '}',
-            '[': ']'
+        if len(s) % 2 != 0:
+            return False
+        pairs = {
+            ')': '(', 
+            ']': '[', 
+            '}': '{'
         }
         stack = []
-        for char in s:
-            if char in valid_set:  # if left Parentheses
-                stack.append(char)
-            else:  # if right Parentheses
-                if not stack or valid_set[stack[-1]] != char:
-                    # does not match
+        for string in s:
+            if string in '({[':
+                stack.append(string)
+            else:
+                if not stack or stack[-1] != pairs[string]:
                     return False
-                stack.pop() # pop if matched
-        #when there is nothing in stack meaning it work
-        return len(stack) == 0
+                stack.pop()
+        return not stack
